@@ -2,16 +2,14 @@ import styles from "./Post.module.css";
 
 import igniteLogo from "../assets/ignite-logo.svg";
 import { Comment } from "./Comment";
+import { Avatar } from "./Avatar";
 
 export function Post() {
   return (
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img
-            className={styles.avatar}
-            src="https://github.com/gregory6z.png"
-          />
+          <Avatar src="https://github.com/gregory6z.png" />
           <div className={styles.authorInfo}>
             <strong>Gregory Praxedes</strong>
             <span>Web Developer</span>
