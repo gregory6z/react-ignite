@@ -1,6 +1,7 @@
 import styles from "./Post.module.css";
 
 import igniteLogo from "../assets/ignite-logo.svg";
+import { Comment } from "./Comment";
 
 export function Post() {
   return (
@@ -31,18 +32,26 @@ export function Post() {
         </p>
         <p>
           {" "}
-          <a href="#">#novoprojeto</a> <a href="#">#nlw</a>{" "}
+          <a href="#">#novoprojeto</a>
           <a href="#"> #rocketseat</a>
+          <a href="#">#nlw</a>{" "}
         </p>
       </div>
       <form className={styles.commentForm}>
-        <strong>Laissez votre Feedback</strong>
+        <strong>Laissez votre feedback</strong>
 
         <textarea placeholder="laissez un commentaire" />
         <footer>
           <button type="submit">Commentaire</button>
         </footer>
+        <div></div>
       </form>
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+      </div>
     </article>
   );
 }
