@@ -36,8 +36,15 @@ export function Post({ author, publishedAt, content }) {
   }
 
   function handleNewCommentChange() {
+    event.target.setCustomValidity("");
     setNewCommentText(event.target.value);
   }
+
+  function handleNewCommentInvalid() {
+    event.target.setCustomValidity("Champ Invalid");
+  }
+
+  const isNewCommentEmpty = newCommentText.length === 0;
 
   function deleteComment(commentToDelete) {
     const commentsWithoutDeletedOne = comments.filter((comment) => {
@@ -85,9 +92,13 @@ export function Post({ author, publishedAt, content }) {
           name="comment"
           value={newCommentText}
           onChange={handleNewCommentChange}
+          required
+          onInvalid={handleNewCommentInvalid}
         />
         <footer>
-          <button type="submit">Commentaire</button>
+          <button type="submit" disabled={isNewCommentEmpty}>
+            Publier
+          </button>
         </footer>
         <div></div>
       </form>
