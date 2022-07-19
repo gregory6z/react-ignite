@@ -1,2 +1,0 @@
-# react-ignite
-# react-ignite
