@@ -6,6 +6,8 @@
 
 &nbsp;
 
+LINK => https://react-feed-3uxr7xc2o-gregory6z.vercel.app/#
+
 ## 📚 Renseignements sur le projet
 
 react feed est une application qui simule un réseau social, pour créer et commenter des posts.
