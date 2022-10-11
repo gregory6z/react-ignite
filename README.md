@@ -31,12 +31,12 @@ Ce projet a été développé pendant l'un des chapitres Ignite par Rocketseat! 
 
 ```
 # Ouvrez un terminal et copiez ce référentiel avec la commande
-$ git clone https://github.com/gregory6z/ignite-reactjs-02-gpmoney.git
+$ git clone https://github.com/gregory6z/react.feed
 ```
 
 ```
 # Accédez au dossier de l'application
-$ cd ignite-reactjs-02-gpmoney
+$ cd react.feed
 
 # Installez les dépendances
 $ yarn
